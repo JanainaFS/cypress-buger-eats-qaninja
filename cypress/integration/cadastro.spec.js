@@ -20,7 +20,8 @@ describe('Cadastro', () => {
                 complemento: 'Casa',
                 bairro: 'Tiradentes',
                 cidade_uf: 'Juazeiro do Norte/CE'
-            }
+            },
+            metodo_entrega: 'Moto'
         }
 
         cy.get('input[name="name"]').type(entregador.nome)
