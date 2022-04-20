@@ -9,6 +9,7 @@
   "author": "Janaina Feitosa",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^9.5.2"
+    "cypress": "^9.5.2",
+    "cypress-file-upload": "^5.0.8"
   }
 }
