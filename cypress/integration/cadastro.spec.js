@@ -39,5 +39,9 @@ describe('Cadastro', () => {
         cy.get('input[name="address"]').should('have.value', entregador.endereco.rua)
         cy.get('input[name="district"]').should('have.value', entregador.endereco.bairro)
         cy.get('input[name="city-uf"]').should('have.value', entregador.endereco.cidade_uf)
+
+        //cy.contains('.delivery-method li', entregador.metodo_entrega).click()
+        cy.get('img[alt="Moto"]').click()
+
     })
 })
