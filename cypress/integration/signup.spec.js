@@ -9,7 +9,7 @@ describe('Signup', () => {
     //     })
     // })
 
-    it('User should be deliver', function() {
+    it.skip('User should be deliver', function() {
         var deliver = signupFactory.deliver()
 
         signup.go()
@@ -21,7 +21,7 @@ describe('Signup', () => {
         signup.modalContentShouldBe(expectedMessage)
     })
 
-    it('Incorrect document', function() {
+    it.skip('Incorrect document', function() {
         var deliver = signupFactory.deliver()
         deliver.cpf = '000000141AA'
 
@@ -31,7 +31,7 @@ describe('Signup', () => {
         signup.alertMessageShouldBe('Oops! CPF inválido')
     })
 
-    it('Incorrect email', function() {
+    it.skip('Incorrect email', function() {
         var deliver = signupFactory.deliver()
         deliver.email = 'janaina.com.br'
 
@@ -39,5 +39,17 @@ describe('Signup', () => {
         signup.fillForm(deliver)
         signup.submit()
         signup.alertMessageShouldBe('Oops! Email com formato inválido.')
+    })
+
+    it('Required fields', function(){
+        signup.go()
+        signup.submit()
+        signup.alertMessageShouldBe('É necessário informar o nome')
+        signup.alertMessageShouldBe('É necessário informar o CPF')
+        signup.alertMessageShouldBe('É necessário informar o email')
+        signup.alertMessageShouldBe('É necessário informar o CEP')
+        signup.alertMessageShouldBe('É necessário informar o número do endereço')
+        signup.alertMessageShouldBe('Selecione o método de entrega')
+        signup.alertMessageShouldBe('Adicione uma foto da sua CNH')
     })
 })
