@@ -1,0 +1,35 @@
+{
+    "signup": {
+        "name": "Janaina Feitosa",
+        "cpf": "00000014141",
+        "email": "janaina@email.com",
+        "whatsapp": "11999999999",
+        "address": {
+            "postalcode": "63031280",
+                "street": "Rua Coronel José Moreira Cabral",
+                "number": "306",
+                "details": "Casa",
+                "district": "Tiradentes",
+                "city_state": "Juazeiro do Norte/CE"
+            },
+            "delivery_method": "Moto",
+            "cnh": "cnh-digital.jpg"
+    },
+
+    "cpf_inv":{
+        "name": "Julia Feitosa",
+        "cpf": "000000141AA",
+        "email": "julia@email.com",
+        "whatsapp": "11988888888",
+        "address": {
+            "postalcode": "63031280",
+                "street": "Rua Coronel José Moreira Cabral",
+                "number": "130",
+                "details": "Casa",
+                "district": "Tiradentes",
+                "city_state": "Juazeiro do Norte/CE"
+            },
+            "delivery_method": "Moto",
+            "cnh": "cnh-digital.jpg"
+    }
+}
