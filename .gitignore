@@ -106,3 +106,5 @@ dist
 #Pastas de evidências
 cypress/screenshots/
 cypress/videos/
+
+temp.txt
